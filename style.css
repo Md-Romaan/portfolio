@@ -1,39 +1,141 @@
 /* font-family: 'Lobster', cursive; */
 /* font-family: 'Orbitron', sans-serif; */
-.navbar-brand{
+.navbar-brand {
     font-family: 'Orbitron', sans-serif;
 }
-#ul1{
+
+
+#ul1 {
     margin-left: 40px;
 }
 
-#img1, #img2, #img3{
+#img1,
+#img2,
+#img3 {
     height: 450px;
 }
 
-.nav-link{
+.nav-link {
     color: white !important;
 }
-   
+
 
 
 /* float class is imported from catto css. */
-.float{
+.float {
     transition: .5s, color .10s;
     -webkit-transition: .5s, color .10s;
     -moz-transition: .5s, color .10s;
 }
-.float:hover{
-    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
-    transform: translate(0px,5px);
-    -webkit-transform: translate(0px,5px);
-    -moz-transform:translate(0px,5px);
+
+.float:hover {
+    box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    -moz-transform: translate(0px, 5px);
 }
 
 
-.my-border{
+.my-border {
     /* border: 1px solid black; */
-    box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.75);
 }
 
-       
+.contact-button {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/* project-section------------------------------ */
+.project-section {
+    margin-bottom: 20px;
+}
+
+.my-card {
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    width: 80%;
+    height: 380px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    transition: all;
+    transition-duration: 1s;
+}
+
+.my-card:hover {
+    width: 85%;
+    height: 385px;
+}
+
+
+
+/* certificate......................................................... */
+.cert-card {
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+
+/* Text Animation--------------------------------------- */
+.typewriter {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    animation-iteration-count: infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+
+
+
+/* 773 */
+/* @media screen and (max-width: ) {
+    
+
+
+} */
